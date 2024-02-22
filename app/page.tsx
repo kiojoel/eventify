@@ -5,7 +5,7 @@ import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export default function Home() {
   return (
-    <section className=" bg-blue-100 h-[90vh]">
+    <section className=" bg-blue-100 ">
       <div className="p-7 flex flex-col ">
         <div className="mx-auto flex flex-col items-center mb-5">
           <h1 className="font-extrabold text-3xl mb-1">
