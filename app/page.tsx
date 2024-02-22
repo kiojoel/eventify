@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
-
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Image from "next/image";
 import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { redirect } from "next/navigation";
 
-export default function Home() {
+export default async function Home() {
+  const { isAuthenticated } = getKindeServerSession();
+
+  if (await isAuthenticated()) {
+    return redirect("/dashboard");
+  }
   return (
     <section className=" bg-blue-100 ">
       <div className="p-7 flex flex-col ">
