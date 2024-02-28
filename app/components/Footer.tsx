@@ -5,11 +5,11 @@ export function Footer() {
     <footer className="flex container justify-between sm:flex-row p-5 text-center gap-4 border-t">
       <div className="">
         <Link href="/" className="font-bold text-2xl">
-          Eventify
+          EventNext
         </Link>
       </div>
       <p className="">
-        {new Date().getFullYear()} Eventify. All RIghts reserved.
+        {new Date().getFullYear()} EventNext. All RIghts reserved.
       </p>
     </footer>
   );

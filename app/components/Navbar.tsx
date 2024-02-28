@@ -25,7 +25,7 @@ export async function Navbar() {
     <nav className="border-b bg-background h-[10vh] flex items-center sticky top-0 z-0">
       <div className="container flex items-center justify-between">
         <Link href="/" className="font-bold text-3xl">
-          Eventify
+          EventNext
         </Link>
 
         <div className="hidden lg:flex ">
@@ -100,7 +100,7 @@ export async function Navbar() {
                   <SheetHeader>
                     <SheetTitle>
                       <Link href="/" className="font-bold text-2xl">
-                        Eventify
+                        EventNext
                       </Link>
                     </SheetTitle>
                     <Separator />
